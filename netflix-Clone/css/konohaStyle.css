@@ -1,0 +1,98 @@
+/*Boas praticas:
+> Criar estruturas de Wrapper (Container / Embrulho) do conteudo / seção.
+> Crie um base referencial visual para auxiliar a codifição do projeto.
+> Defina a Estrutura da pagina html e uma primeira visão de formatação;
+    * Numa segunda fase - de refatoração - incremente com fontes e itens personalizadas.
+> Uso de Variaveis - Declaradas em pseudo-classe ':root'
+    * Essa pratica é sugerida para casos de identidade visual predefinidas. (cores, imagens, etc...)
+> Uso de ResetFormat - "Criando um PONTO-ZERO" - Com o uso do seletor '*' e aplicando formatação 'zerado' para as propriedades.
+> Uso do Normalize.css - Com o uso de um arquivo css com as formatações da comunidade normalize.css do github.
+*/
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<    Declaração de Variaveis >>>>>>>>>>>>>>>>>>>*/
+:root {
+    --vermelha: #E50914;
+    --preta: #141414;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<   ResetFormat >>>>>>>>>>>>>>>>>>>>>>>>>*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--preta);
+    color: white; /*FORMATAÇÃO MOMENTEA*/
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<  Navegação   >>>>>>>>>>>>>>>>>>>>>>>>*/
+
+header {
+    width: 100%;
+
+}
+
+header .nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    /* Essas duas propriedades abaixo são aptas para formatação de flexbox*/
+    align-items: center; /*O align-items realiza o alinhamento Vertical*/
+    justify-content: space-between;  /*O justify-content realiza o alinhamento horizontal*/
+}
+
+header .logo {
+    color: var(--vermelha);
+    font-family: 'Arial Black', Times, serif;
+    font-size: 40px;
+}
+
+
+header nav a {
+    color: #aaa;
+    margin-right: 10px;
+    align-items:flex-end;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* <<<<<<<<<<<<<<<<<<<< Area Principal (MAIN) >>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+.main-movie-wrapper {
+    /*Responsividade */
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+
+    /*Formatação do wrapper */
+    font-size: 16px;
+    min-height: 100%;
+    background:linear-gradient(rgba(0, 0, 0, .50));
+    background-image: url('../img/capa-naruto.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size:cover;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
