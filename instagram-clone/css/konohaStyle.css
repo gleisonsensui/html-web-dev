@@ -74,6 +74,7 @@ body {
     align-items: center;
     border-radius: 50%;
     overflow: hidden; /*O transborda da imagem é cortado e o resto do conteudo vai ficar invisivel*/    
+    margin-bottom: 1rem;
 }
 
 .profile-photo img {
@@ -90,7 +91,7 @@ body {
 
 .instagram-logout {
     color: #0095f6;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 
