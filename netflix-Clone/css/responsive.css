@@ -1,0 +1,30 @@
+@media (max-width: 460px){
+   header .container {
+        display: flex;
+        flex-direction: column;
+        transition: .3s ease all;
+    }
+
+
+    .buttons {
+        margin-top: .5rem;
+        width: 90px;
+        transition: .3s ease all;
+    }
+
+    .main-movie {
+        background-position: top center;
+        transition: .3s ease all;
+    }
+
+    .title-movie {
+        margin-top: 5rem;
+        text-transform: uppercase;
+        font-size: 1rem;
+        transition: .3s ease all;
+    }
+
+
+
+}
+

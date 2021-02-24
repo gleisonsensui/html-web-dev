@@ -1,4 +1,5 @@
 /*Boas praticas:
+> Explicitar a função dos botoes no html
 > Criar estruturas de Wrapper (Container / Embrulho) do conteudo / seção.
 > Crie um base referencial visual para auxiliar a codifição do projeto.
 > Defina a Estrutura da pagina html e uma primeira visão de formatação;
@@ -17,7 +18,7 @@
 }
 
 
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<   ResetFormat >>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<   ResetFormat / StandardFormat >>>>>>>>>>>>>>>>>>>>>>>>>*/
 * {
     padding: 0;
     margin: 0;
@@ -30,6 +31,8 @@ body {
     color: white; /*FORMATAÇÃO MOMENTEA*/
 }
 
+
+
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<  Navegação   >>>>>>>>>>>>>>>>>>>>>>>>*/
 
 header {
@@ -37,7 +40,7 @@ header {
 
 }
 
-header .nav-wrapper {
+header .container {
     display: flex;
     flex-direction: row;
     /* Essas duas propriedades abaixo são aptas para formatação de flexbox*/
@@ -64,4 +67,67 @@ header nav a:hover {
 
 /* <<<<<<<<<<<<<<<<<<<< Area Principal (MAIN) >>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
+.main-movie{
+    /* Responsividade e alinhamento*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*ALinha o eixo x*/
+    align-items: flex-start; /*Alinha o eixo y*/
+
+    /*Formatação*/
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0,0,0,.5)100%), url('../img/capa-house.jpg');
+
+    /*Altura e Dimensionamento*/
+    height: 400px;
+    background-size: cover;
+}
+
+
+.buttons-movie {
+    margin-top: 2rem;
+}
+
+
+.title-movie {
+    margin-top: 5rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+
+.buttons {
+    font-family:'Trebuchet MS', Arial, sans-serif ;
+    font-size: .6rem;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    transition: .3s ease all;
+
+
+    background-color: rgba(0,0,0,.5);
+    border: none;
+    color: #fff;
+
+    padding: .7rem;
+    margin-right: 1rem;
+
+}
+
+.buttons:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000
+}
+
+.main-movie .container{
+    max-width: 20rem;
+}
+
+.container{
+    margin-left: 1rem;
+}
+
+.carousel-box {
+    margin-top: 1rem;
+}
 

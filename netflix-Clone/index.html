@@ -6,13 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/konohaStyle.css">
+    
+    <!--owlcss-->
+    <link rel="stylesheet" type="text/css" href="css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl-carousel/owl.theme.default.min.css">
+
+    <!--Responsive file-->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
     <title>NETFLIX CLONE</title>
 </head>
 <body>
     <div class="main-container">
         <header>
-            <div class="nav-wrapper">
+            <div class="container">
                 <h2 class="logo">NETFLIX</h2>
                 <nav>
                     <a href="">Inicio</a>
@@ -25,20 +32,37 @@
 
         <main>
             <section class="main-movie">
-                <div class="main-movie-wrapper">
-                    <h3 class="title-movie">The Last - Naruto O Filme (2014)</h3>
-                    <p class="description-movie" >Após dois anos dos eventos da Quarta Guerra Mundial Ninja, a lua começa a cair em direção à terra. Com a lua agora como um meteoro que ameaça destruir tudo com o impacto, um Naruto mais velho tem de lidar com esta nova ameaça. Enquanto isso, uma concorrente a liderança do Clã Hyūga, Hinata, consegue entregar à Naruto um cachecol de valor sentimental amoroso no Festival de Inverno de Konohagakure, e, em seguida, é vítima de um fracassado sequestro de um vilão misterioso. Este vilão consegue tomar a irmã mais nova de Hinata, Hanabi Hyūga, como réfem, e assim atrai Naruto, Sakura, Sai, Shikamaru e Hinata em uma missão de resgate a Hanabi. Em meio a caça ao vilão, ocorre algumas conversas entre Naruto e Hinata, assim como encontros com o vilão, e os acontecimentos só fortalecem uma relação mais forte entre eles.</p>
+                <div class="container">
+                    <h3 class="title-movie">House &#127482;&#127480;of Cards</h3>
+                    <p class="description-movie" >Um político inescrupuloso não mede esforços para conquistar o poder nos EUA neste drama vencedor do Emmy e do Globo de Ouro.</p>
                     <div class="buttons-movie">
-                        <button role="button" class="button">
-                            ASSISTIR
+                        <button role="button" class="buttons">
+                            <i class="fas fa-play-circle">  assistir agora</i>
                         </button>
-                        <button role="button" class="button">
-                            MAIS INFORMAÇÕES
+                        <button role="button" class="buttons">
+                            <i class="fas fa-info-circle">  mais informações</i>
                         </button>
                     </div>
                 </div>
             </section>
+            <section class="carousel-box">
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><h4><img src="img/mini1.jpg" alt=""></h4></div>
+                    <div class="item"><h4><img src="img/mini2.jpg" alt=""></h4></div>
+                    <div class="item"><h4><img src="img/mini3.jpg" alt=""></h4></div>
+                    <div class="item"><h4><img src="img/mini4.jpg" alt=""></h4></div>
+                    <div class="item"><h4><img src="img/mini5.jpg" alt=""></h4></div>
+                    <div class="item"><h4><img src="img/mini6.jpg" alt=""></h4></div>
+                    <div class="item"><h4><img src="img/mini7.jpg" alt=""></h4></div>
+                    <div class="item"><h4><img src="img/mini8.jpg" alt=""></h4></div>
+                    <div class="item"><h4><img src="img/mini9.jpg" alt=""></h4></div>
+                    <div class="item"><h4><img src="img/mini10.jpg" alt=""></h4></div>
+            </section>
         </main>
-    </div>    
+    </div>
+    <script src="js/owl-carousel/jquery.min.js"></script>    
+    <script src="js/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/owl-carousel/setup-file.js"></script>
+    <script src="https://kit.fontawesome.com/4490934e0e.js" crossorigin="anonymous"></script>
 </body>
 </html>
