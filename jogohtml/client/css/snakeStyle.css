@@ -1,0 +1,25 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    float: inline-start;
+    color: #fff;
+}
+
+
+.container {
+    text-align: center;
+    background-image: url('../img/pexels-egor-kamelev-751676.jpg');
+    background-size: cover;
+    line-height: 9rem;
+
+}
+
+
+canvas {
+    float: inline-start;
+    border-radius: 2rem;
+}
